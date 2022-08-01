@@ -1,0 +1,316 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #eff3f6;
+  overflow: hidden;
+}
+
+.Container {
+  display: flex;
+  width: 22.5rem;
+  align-items: center;
+  max-width: 100%;
+  min-height: 50rem;
+  margin: 0 1rem;
+}
+
+@media all and (min-width: 400px) and (max-width: 2000px) {
+  .Container {
+    display: flex;
+    align-items: center;
+    /*width: 22.5rem;*/
+    max-width: 100%;
+    min-height: 50rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 340px) {
+  .Container {
+    display: flex;
+    align-items: center;
+    /*width: 22.5rem;*/
+    max-width: 100%;
+    min-height: 50rem;
+    margin: 0 auto;
+  }
+}
+
+.form {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 6rem;
+}
+
+@media screen and (min-width: 280px) and (max-width: 340px) {
+  .form {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 13.5rem;
+  }
+}
+
+.Form-container {
+  width: 100%;
+  max-width: 100%;
+  /*min-height: 27.9rem;*/
+}
+
+.form-header {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #2e384d;
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+}
+
+.form-caption {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #2e384d;
+}
+
+label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.063rem;
+  color: #2e384d;
+}
+
+.form-email {
+  margin-top: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  display: flex;
+  width: 19.2rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  background: rgba(46, 56, 77, 0.02);
+  border: 0.063rem solid rgba(46, 56, 77, 0.07);
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 280px) and (max-width: 340px) {
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    display: flex;
+    width: 17rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    background: rgba(46, 56, 77, 0.02);
+    border: 0.063rem solid rgba(46, 56, 77, 0.07);
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+  }
+}
+
+#togglePassword {
+  margin-left: 18rem;
+  top: 25.3rem;
+  position: absolute;
+  z-index: 5;
+  color: #35268c;
+}
+
+@media screen and (min-width: 280px) and (max-width: 340px) {
+  #togglePassword {
+    margin-left: 16rem;
+    top: 22.4rem;
+    position: absolute;
+    z-index: 5;
+    color: #35268c;
+  }
+}
+
+::placeholder {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #8798ad;
+}
+
+.Forgot-pswd {
+  width: 8.375rem;
+  margin-left: 12rem;
+  margin-bottom: 2.5rem;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #35268c;
+}
+
+@media screen and (min-width: 280px) and (max-width: 340px) {
+  .Forgot-pswd {
+    width: 8.375rem;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #35268c;
+  }
+}
+
+button {
+  width: 20.5rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #35268c;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 280px) and (max-width: 340px) {
+  button {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #35268c;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+button::-ms-thumb {
+  opacity: 80%;
+}
+
+.form-noacct {
+  display: flex;
+  height: 1.5rem;
+  margin-left: 3.5rem;
+}
+
+@media screen and (min-width: 280px) and (max-width: 340px) {
+  .form-noacct {
+    display: flex;
+    height: 1.5rem;
+    margin-left: 1.8rem;
+  }
+}
+
+.no-account {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #2e384d;
+  padding-right: 0.5rem;
+}
+
+.sign-up {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #35268c;
+}
+
+.login-imgs {
+  display: flex;
+}
+
+.img-1 {
+  width: 102px;
+  height: 130px;
+  position: absolute;
+  left: 0.052%;
+  top: 92%;
+  bottom: -10%;
+  transform: rotate(24deg);
+}
+
+.img-2 {
+  width: 102px;
+  height: 130px;
+  position: absolute;
+  right: 0%;
+  top: 92%;
+  bottom: -10%;
+  transform: rotate(-24deg);
+}
+
+@media all and (min-width: 700px) and (max-width: 2000px) {
+  .img-1 {
+    width: 230px;
+    height: 278px;
+    position: absolute;
+    left: 0.052%;
+    right: 68.06%;
+    top: 76%;
+  }
+
+  .img-2 {
+    width: 230px;
+    height: 278px;
+    position: absolute;
+    right: 0%;
+    top: 76%;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 340px) {
+  .img-1 {
+    width: 96px;
+    height: 120px;
+    position: absolute;
+    left: 0.052%;
+    top: 100%;
+    transform: rotate(24deg);
+  }
+
+  .img-2 {
+    width: 96px;
+    height: 120px;
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    transform: rotate(-24deg);
+  }
+}
